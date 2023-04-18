@@ -1,1 +1,7 @@
-<p>usuarios works!</p>
+<h2>My Heroes</h2>
+<ul class="heroes">
+  <li *ngFor="let user of users">
+    {{user.nomeCompleto}}
+    {{user.nomeSocial}}
+  </li>
+</ul>

@@ -1,17 +1,18 @@
 import { Injectable } from '@angular/core';
 import {Usuario} from "./usuario";
-import {USERS} from "./usuarios/mock";
-import { Observable, of } from 'rxjs';
+import { Observable } from 'rxjs';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UsuarioService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
+
+  private usersUrl = 'https://dev.labtime.ufg.br/selecao-2023/usuarios';
 
   getUsers(): Observable<Usuario[]> {
-    const users = of(USERS);
-    return users;
+    return this.http.get<Usuario[]>(this.usersUrl)
   }
 }
