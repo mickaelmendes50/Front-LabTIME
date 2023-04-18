@@ -9,6 +9,19 @@ import {Usuario} from "../usuario";
 })
 export class UsuariosComponent {
   users: Usuario[] = [];
+  tags: string[] = [
+    "Nome completo",
+    "Nome social",
+    "Data de nascimento",
+    "Codigo",
+    "Sexo",
+    "Email",
+    "Estado",
+    "Municipio",
+    "Numero de acessos",
+    "Situação",
+    "Data de vínculo"
+  ]
 
   constructor(private usuarioService: UsuarioService) {}
 

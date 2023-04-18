@@ -1,7 +1,19 @@
 <h2>My Heroes</h2>
-<ul class="heroes">
-  <li *ngFor="let user of users">
-    {{user.nomeCompleto}}
-    {{user.nomeSocial}}
-  </li>
-</ul>
+<table>
+  <tr>
+    <th *ngFor="let tag of tags">{{tag}}</th>
+  </tr>
+  <tr *ngFor="let user of users">
+    <td>{{user.nomeCompleto}}</td>
+    <td>{{user.nomeSocial}}</td>
+    <td>{{user.dataDeNascimento}}</td>
+    <td>{{user.codigo}}</td>
+    <td>{{user.sexo}}</td>
+    <td>{{user.email}}</td>
+    <td>{{user.estado}}</td>
+    <td>{{user.municipio}}</td>
+    <td>{{user.numeroDeAcessos}}</td>
+    <td>{{user.situacao}}</td>
+    <td>{{user.dataDeVinculo}}</td>
+  </tr>
+</table>
