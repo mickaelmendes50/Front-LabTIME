@@ -1,27 +1,28 @@
-# Frontend
+# Front-end LabTIME
+### Objetivo
+Consumir o backend fornecido pela equipe e exibir em tela em formato de listagem (responsivo), bem como realizar busca na listagem.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6.
+### Tecnologias
+<img alt="JavaScript" src="https://img.shields.io/badge/javascript-EFD81D.svg?style=for-the-badge&logo=javascript&logoColor=black"/> <img alt="TypeScript" src="https://img.shields.io/badge/typescript-2F74C0.svg?style=for-the-badge&logo=typescript&logoColor=white"/> <img alt="Angular" src="https://img.shields.io/badge/Angular-D60F2E.svg?style=for-the-badge&logo=angular&logoColor=white"/>
 
-## Development server
+### Ferramentas
+<img alt="Git" src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white"/> <img alt="GitHub" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"/> <img alt="WebStorm" src="https://img.shields.io/badge/webstorm-05C1C8.svg?style=for-the-badge&logo=webstorm&logoColor=white"/> <img alt="Postman" src="https://img.shields.io/badge/postman-F76936.svg?style=for-the-badge&logo=postman&logoColor=white"/>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Executar
 
-## Code scaffolding
+Faça um clone do repositório através do comando:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```
+https://github.com/mickaelmendes50/Front-LabTIME.git
+```
 
-## Build
+Então o execute com o comando:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```
+ng serve --open
+```
 
-## Running unit tests
+## Utilização
+O projeto consiste em uma única página que lista todos os usuários obtidos através da API disponibilizada.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Há uma caixa de pesquisa que permite buscar por elementos com base no nome completo, nome social e email.
