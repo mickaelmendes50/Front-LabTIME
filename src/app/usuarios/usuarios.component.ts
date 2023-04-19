@@ -23,14 +23,21 @@ export class UsuariosComponent {
     "Data de vínculo"
   ]
 
+  private usersURL = 'https://dev.labtime.ufg.br/selecao-2023/usuarios';
+
   constructor(private usuarioService: UsuarioService) {}
 
-  getUsers(): void {
-    this.usuarioService.getUsers()
+  getUsers(context: string): void {
+    this.usuarioService.getUsers(context)
       .subscribe(users => this.users = users);
   }
 
   ngOnInit(): void {
-    this.getUsers();
+    this.getUsers(this.usersURL);
+  }
+
+  filtro(context: string) {
+    context = this.usersURL + '?filtro=' + context
+    this.getUsers(context)
   }
 }
