@@ -23,7 +23,7 @@ export class UsuariosComponent {
     "Data de vínculo"
   ]
 
-  private usersURL = 'https://dev.labtime.ufg.br/selecao-2023/usuarios';
+  private usersURL = '/api/usuarios';
 
   constructor(private usuarioService: UsuarioService) {}
 
